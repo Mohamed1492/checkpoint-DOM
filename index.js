@@ -3,6 +3,8 @@ var btnMinus = document.getElementsByClassName("minus");
 var btnlike = document.getElementsByClassName("like");
 var btndelete = document.getElementsByClassName("delete");
 var totalcostarr = document.getElementsByClassName("price");
+var checkboxes = document.querySelectorAll("input[type='checkbox']");
+console.log(checkboxes);
 
 // Bouton + et - :
 for (var i = 0; i < btnPlus.length; i++) {
@@ -92,11 +94,16 @@ function deleter(e) {
 function calcultotal() {
   var totalcost = 0;
   // if (document.querySelector("#shipped").checked==true){totalcost += Number(totalcostarr[totalcostarr.length-1].innerHTML)};
-  for (var i = 0; i < totalcostarr.length; i++) {
-    if(document.querySelectorAll(".check")[i].checked==true){
+  for (var i = 0; i < checkboxes.length; i++) {
+    if(checkboxes[i].checked==true){
       totalcost += Number(totalcostarr[i].innerHTML);
     const tabelt = document.querySelector("#total");
     tabelt.innerHTML = totalcost;
 }
 }
+}
+for (var i = 0; i < checkboxes.length; i++) {
+  checkboxes[i].addEventListener("change", function() {
+    calcultotal();
+  });
 }
