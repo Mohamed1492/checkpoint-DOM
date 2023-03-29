@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3a150bff2b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>PANIER D'ACHAT</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <header>
+      <h1>SHOPPING CART </h1>
+      <img src="data:image/png;base64,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" alt="">
+    </header>
+    <main>
+      <div class="container">
+        <!-- les titres -->
+        <table class="parent">
+          <tr>
+            <th>Choice</th>
+            <th>Product photo</th>
+            <th>Unit price (DT)</th>
+            <th>Quantity</th>
+            <th>Total price (DT)</th>
+          </tr>
+          <!-- Produit salade -->
+          <tr class="child">
+            <td>
+              <div class="del">
+                <input type="checkbox" class="check" />
+                <button class="delete">
+                  <i class="fa-solid fa-square-xmark"></i>
+                </button>
+                <button class="like">
+                  <i class="fa-solid fa-heart-circle-plus"></i>
+                </button><br>
+                salade
+              </div>
+            </td>
+            <td>
+              <img
+                src="https://img.cuisineaz.com/660x660/2013/12/20/i34581-salade-nicoise-rapide.jpeg"
+                alt="image-salde"
+              />
+            </td>
+            <td class="unitPrice">7</td>
+            <td>
+              <div class="btn-cont">
+                <button class="plus">
+                  <i class="fa-solid fa-circle-up" ></i>
+                </button>
+                <p>0</p>
+                <button class="minus">
+                  <i class="fa-sharp fa-solid fa-circle-down"></i>
+                </button>
+              </div>
+            </td>
+            <td class="price">0</td>
+          </tr>
+          <!-- Produit soupe -->
+          <tr class="child">
+            <td>
+              <div class="del">
+                <input type="checkbox" class="check" />
+                <button class="delete">
+                  <i class="fa-solid fa-square-xmark"></i>
+                </button>
+                <button class="like">
+                  <i class="fa-solid fa-heart-circle-plus"></i>
+                </button><br>
+                Soupe
+              </div>
+            </td>
+            <td>
+              <img
+                src="https://www.la-cuisine-marocaine.com/photos-recettes/soupe-legumes-mouline.jpg"
+                alt="image-soupe"
+              />
+            </td>
+            <td class="unitPrice">4.5</td>
+            <td>
+              <div class="btn-cont">
+                <button class="plus">
+                  <i class="fa-solid fa-circle-up"></i>
+                </button>
+                <p>0</p>
+                <button class="minus">
+                  <i class="fa-sharp fa-solid fa-circle-down"></i>
+                </button>
+              </div>
+            </td>
+            <td class="price">0</td>
+          </tr>
+          <!-- Produit Plat -->
+          <tr class="child">
+            <td>
+              <div class="del">
+                <input type="checkbox" class="check" />
+                <button class="delete">
+                  <i class="fa-solid fa-square-xmark"></i>
+                </button>
+                <button class="like">
+                  <i class="fa-solid fa-heart-circle-plus"></i>
+                </button><br>
+                Plat
+              </div>
+            </td>
+            <td>
+              <img
+                src="https://media.gettyimages.com/id/1403973419/fr/photo/plateau-de-table-de-nourriture-%C3%A9tal%C3%A9-sur-la-table.jpg?s=612x612&w=gi&k=20&c=pABp93hVIPc6SeTvbFbijcir6FM-NG0xBNMlEUPkjNE="
+                alt="image-Plate"
+              />
+            </td>
+            <td class="unitPrice">15.5</td>
+            <td>
+              <div class="btn-cont">
+                <button class="plus">
+                  <i class="fa-solid fa-circle-up"></i>
+                </button>
+                <p>0</p>
+                <button class="minus">
+                  <i class="fa-sharp fa-solid fa-circle-down"></i>
+                </button>
+              </div>
+            </td>
+            <td class="price">0</td>
+          </tr>
+          <!-- Produit dessert -->
+          <tr class="child">
+            <td>
+              <div class="del">
+                <input type="checkbox" class="check" />
+                <button class="delete">
+                  <i class="fa-solid fa-square-xmark"></i>
+                </button>
+                <button class="like">
+                  <i class="fa-solid fa-heart-circle-plus"></i>
+                </button><br>
+                Dessert
+              </div>
+            </td>
+            <td>
+              <img
+                src="https://img.cuisineaz.com/660x660/2016/07/10/i75519-cheesecake-aux-fruits-rouges-sans-sucre.jpg"
+                alt="image-dessert"
+              />
+            </td>
+            <td class="unitPrice">5.5</td>
+            <td>
+              <div class="btn-cont">
+                <button class="plus">
+                  <i class="fa-solid fa-circle-up"></i>
+                </button>
+                <p>0</p>
+                <button class="minus">
+                  <i class="fa-sharp fa-solid fa-circle-down"></i>
+                </button>
+              </div>
+            </td>
+            <td class="price">0</td>
+          </tr>
+          <!-- Shipping -->
+          <tr class="child">
+            <td>
+              <div class="del">
+                <input type="checkbox" class="check" id="shipped" />
+                <button class="delete">
+                  <i class="fa-solid fa-square-xmark"></i>
+                </button>
+                <button class="like">
+                  <i class="fa-solid fa-heart-circle-plus"></i>
+                </button><br>
+                Shipping
+              </div>
+            </td>
+            <td><img
+                src="https://images.squarespace-cdn.com/content/v1/5c5f3a339b7d151ebf0ca339/1600713883712-LT3EMVXVR90RUC1EX40J/shipping.png"
+                alt="image-dessert"
+              /></td>
+            <td class="unitPrice">3</td>
+            <td></td>
+            <td class="price">3</td>
+          </tr>
+          <!-- total global -->
+          <tr>
+            <td></td>
+            <td></td>
+            <td><h2>Total Cost</h2></td>
+            <td>=</td>
+            <td id="total" class="tt">0</td>    
+          </tr>
+        </table>
+      </div>
+    </main>
+    <Footer>
+        <script src="./index.js"></script>
+    </Footer>
+  </body>
+</html>
